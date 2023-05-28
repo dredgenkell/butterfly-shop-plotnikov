@@ -1,0 +1,21 @@
+.menu {
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    margin-left: 10px;
+    width: 115px;
+    height: 90px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+  }
+}

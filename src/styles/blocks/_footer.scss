@@ -1,0 +1,24 @@
+.header {
+  padding: 25px 0;
+  color:$color-light;
+  background-color: $color-dark;
+}
+
+.header-inner {
+  @include inner;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: auto;
+  color: $color-light;
+  font-family: $font-logo;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  text-decoration: none;
+}

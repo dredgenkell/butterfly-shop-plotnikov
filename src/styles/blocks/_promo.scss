@@ -1,0 +1,29 @@
+.promo {
+  padding: 200px 0 214px;
+  background-color: $color-dark;
+  background-image: url(../imgs/promo-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  }
+
+  .promo-inner {
+    @include inner;
+
+  }
+
+  .promo-row {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .promo-title {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 98px;
+    color: $color-light;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+

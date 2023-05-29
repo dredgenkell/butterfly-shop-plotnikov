@@ -1,0 +1,38 @@
+.works {
+  padding: 130px 130px;
+  background-color: $color-light;
+  background-image: url(../../../www/imgs/)
+}
+
+.works-inner {
+  @include inner;
+  display: flex;
+  flex-direction: column;
+}
+.works-title {
+  @include section-title;
+  text-align: center;
+}
+
+.works-list {
+  display: flex;
+  list-style: none;
+  margin-top: 100px;
+  margin-bottom: 120px;
+  justify-content: space-between;
+  margin-right: -$gap-half;
+  margin-left: -$gap-half;
+}
+
+.works-item {
+padding: 0 $gap-half;
+}
+
+.works-img {
+  display: block;
+  width: 304px;
+  height: 304px;
+}
+
+
+

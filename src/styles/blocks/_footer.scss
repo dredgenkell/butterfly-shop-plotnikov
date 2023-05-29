@@ -1,24 +1,49 @@
-.header {
-  padding: 25px 0;
-  color:$color-light;
+.footer {
+  padding: 31px 0;
   background-color: $color-dark;
 }
 
-.header-inner {
+.footer-inner {
   @include inner;
 }
 
-.header-row {
+.footer-row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.header-logo {
+.footer-logo {
+  @include logo;
   margin-right: auto;
+}
+
+.footer-phone {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
   color: $color-light;
-  font-family: $font-logo;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 57px;
   text-decoration: none;
 }
+
+.social {
+  display: flex;
+  margin-left: 45px;
+  list-style: none;
+}
+
+.social-item {
+  margin-left: 15px;
+}
+
+.social-link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+

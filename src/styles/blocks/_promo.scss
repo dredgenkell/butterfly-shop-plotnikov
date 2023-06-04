@@ -9,13 +9,10 @@
 
   .promo-inner {
     @include inner;
-
-  }
-
-  .promo-row {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .promo-title {

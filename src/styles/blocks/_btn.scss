@@ -1,7 +1,6 @@
 .btn {
   display: inline-block;
-  width: 100%;
-  padding: 30px 36px 31px 48px;
+  padding: 30px 45px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -13,4 +12,10 @@
   background-color: $color-accent;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-form {
+  width: 100%;
+  padding: 35px 0;
 }

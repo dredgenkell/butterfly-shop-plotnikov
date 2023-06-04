@@ -1,0 +1,34 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-field-third {
+  flex-basis: 33.3%;
+  padding: 0 $gap-half;
+}
+
+.form-input {
+  width: 100%;
+  height: 104px;
+  margin-top: 8px;
+  margin-left: -$gap-half;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: $color-dark;
+  background-color: $color-light;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-label {
+  margin-left: -$gap-half;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-dark;
+}

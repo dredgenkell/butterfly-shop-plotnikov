@@ -10,32 +10,18 @@
   }
 
   a {
+    padding: 33px 25px;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     color: $color-light;
     text-decoration: none;
-    text-align: center;
 
     &:hover {
-      color: $color-accent;
+      background-color: $color-accent;
     }
   }
 }
 
-.menu-accent {
-  padding: 33px 25px;
-  background-color: $color-accent;
-
-  a {
-  &:hover {
-    color: $color-dark;
-  }
-  }
-}
 
 
-.menu-wrap {
-  padding: 33px 25px;
-  text-align: center;
-}

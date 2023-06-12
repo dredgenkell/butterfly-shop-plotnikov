@@ -1,7 +1,16 @@
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
   padding: 16px 0;
   color:$color-light;
   background-color: $color-dark;
+
+  @media (max-width: $tablet-max) {
+    padding: 20px 0;
+  }
 }
 
 .header-inner {

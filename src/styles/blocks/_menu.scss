@@ -1,12 +1,30 @@
 .menu {
+  @media (max-width: $mobile-max) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    padding: 25px;
+    background-color: $color-dark;
+  }
   ul {
     display: flex;
     list-style: none;
+
+    @media (max-width: $mobile-max) {
+    display: block;
+    }
   }
 
   li {
     text-align: center;
     margin-left: 10px;
+
+    @media (max-width: $mobile-max) {
+      margin: 10px 0;
+      text-align: center;
+    }
   }
 
   a {
@@ -20,6 +38,10 @@
     &:hover {
       background-color: $color-accent;
     }
+    @media (max-width: $mobile-max) {
+      padding: 8px 25px;
+    }
+
   }
 }
 

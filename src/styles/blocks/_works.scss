@@ -1,47 +1,111 @@
 .works {
   padding: 130px 130px;
   background-color: $color-light;
-  background-image: url(../../../www/imgs/)
+  background-image: url(../../../www/imgs/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 120x;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 90px 90px;
+  }
 }
 
 .works-inner {
   @include inner;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+
+
 }
 .works-title {
   @include section-title;
-  text-align: center;
 }
 
 .works-list {
   display: flex;
+
   list-style: none;
   margin-top: 100px;
   margin-bottom: 120px;
   justify-content: space-between;
   margin-right: -$gap-half;
   margin-left: -$gap-half;
+
+  @media (max-width: $tablet-max) {
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    justify-content: start;
+
+  }
+
+  @media (max-width: $mobile-max) {
+    display: block;
+
+  }
 }
 
 .works-item {
   position: relative;
   padding: 0 $gap-half;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+    margin-top: $gap-half;
+    margin-bottom: $gap-half;
+
+  }
+
+  @media (max-width: $mobile-max) {
+
+  }
 }
+
+.works-link {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 304px;
+  height: 304px;
+  text-decoration: none;
+
+}
+
 
 .works-img {
   display: block;
   width: 304px;
   height: 304px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+  @media (max-width: $tablet-max) {
+    width: 364px;
+    height: 364px;
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
+
+
+
 .works-caption {
+  z-index: 1;
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 10;
+  width: 304px;
   padding: 15px 0;
   font-family: $font;
   font-weight: 400;
@@ -50,7 +114,18 @@
   text-align: center;
   color: $color-light;
   background-color: rgba(0, 0, 0, .4);
+
+  @media (max-width: $tablet-max) {
+    width: 364px;
+
+  }
+
+  @media (max-width: $mobile-max) {
+    width: 300px;
+
+  }
 }
+
 
 
 

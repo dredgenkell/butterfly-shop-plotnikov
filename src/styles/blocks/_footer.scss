@@ -1,6 +1,15 @@
 .footer {
   padding: 31px 0;
   background-color: $color-dark;
+
+  @media (max-width: $tablet-max) {
+    padding: 35px 0;
+
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 30px 0 35px;
+  }
 }
 
 .footer-inner {
@@ -11,6 +20,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $tablet-max) {
+
+  }
+
+  @media (max-width: $mobile-max) {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer-logo {
@@ -25,12 +45,30 @@
   line-height: 38px;
   color: $color-light;
   text-decoration: none;
+
+  @media (max-width: $tablet-max) {
+
+
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 30px;
+  }
 }
 
 .social {
   display: flex;
   margin-left: 45px;
   list-style: none;
+
+  @media (max-width: $tablet-max) {
+    margin-left: 35px;
+
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 15px;
+  }
 }
 
 .social-item {

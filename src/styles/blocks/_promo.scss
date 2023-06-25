@@ -4,8 +4,17 @@
   background-image: url(../imgs/promo-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position:  center center fixed;
+
+  @media (max-width: $tablet-max) {
+    padding: 180px 0 190px;
   }
+
+  @media (max-width: $mobile-max) {
+    padding: 110px 0 100px;
+  }
+}
+
 
   .promo-inner {
     @include inner;
@@ -22,5 +31,19 @@
     color: $color-light;
     margin-bottom: 100px;
     text-align: center;
+
+    @media (max-width: $tablet-max) {
+      padding: 180px 0 190px;
+      font-size: 54px;
+      line-height: 74px;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin-bottom: 80px;
+      font-size: 32px;
+      line-height: 44px;
+    }
   }
+
+
 

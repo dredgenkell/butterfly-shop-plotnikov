@@ -1,20 +1,26 @@
 .menu {
+
+  @media (min-width: $desktop) {
+    display: block !important;
+  }
+
+
   @media (max-width: $mobile-max) {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
-
     width: 100%;
     padding: 25px;
     background-color: $color-dark;
   }
+
   ul {
     display: flex;
     list-style: none;
 
     @media (max-width: $mobile-max) {
-    display: none;
+    display: block;
     }
   }
 
@@ -36,7 +42,8 @@
     color: $color-light;
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &.active {
       background-color: $color-accent;
     }
     @media (max-width: $mobile-max) {
@@ -45,6 +52,13 @@
 
   }
 }
+
+.menu-open {
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
+}
+
 
 
 

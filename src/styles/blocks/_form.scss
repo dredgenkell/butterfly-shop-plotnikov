@@ -15,12 +15,14 @@
   }
 }
 
-.form-field-third {
+.form-field {
   flex-basis: 33.33%;
   padding: 0 $gap-half;
 
   @media (max-width: $tablet-max) {
+    width: 100%;
     flex-basis: 50%;
+
 
   }
 
@@ -28,6 +30,22 @@
     display: block;
   }
 }
+
+.form-field-btn {
+  flex-basis: 33.33%;
+  padding: 0 $gap-half;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 100%;
+
+
+  }
+
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
+}
+
 
 
 .form-input {

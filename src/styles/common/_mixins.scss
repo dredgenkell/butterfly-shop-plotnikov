@@ -1,5 +1,5 @@
 @mixin inner($width: 1278px) {
-  width: $width + $gap;
+  max-width: $width + $gap;
   margin: 0 auto;
   padding: 0 $gap-half;
   border: 1px solid $color-accent;

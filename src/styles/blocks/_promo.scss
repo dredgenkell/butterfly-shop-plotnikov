@@ -1,10 +1,10 @@
 .promo {
-  padding: 200px 0 214px;
+  padding: 200px 0 245px;
   background-color: $color-dark;
   background-image: url(../imgs/promo-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:  center center fixed;
+  background-position:  center;
 
   @media (max-width: $tablet-max) {
     padding: 180px 0 190px;
@@ -33,7 +33,7 @@
     text-align: center;
 
     @media (max-width: $tablet-max) {
-      padding: 180px 0 190px;
+
       font-size: 54px;
       line-height: 74px;
     }

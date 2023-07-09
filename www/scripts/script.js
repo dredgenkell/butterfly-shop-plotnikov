@@ -90,4 +90,10 @@ if (prevBtn === this) {
 }
   });
 
+
+  // Slick carousel
+  $('.js-carousel').slick({
+    autoplay: true
+  });
+
 });

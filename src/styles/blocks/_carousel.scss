@@ -1,0 +1,58 @@
+.carousel {
+  display: flex;
+  align-items: center;
+
+  .slick-list {
+    width: calc(100% - 120px);
+  }
+
+  .slick-arrow {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+  }
+
+  .slick-prev {
+    margin-right: 128px;
+    border: none;
+    background-color: #fff;
+    background-image: url('../imgs/ar-left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .slick-next {
+    margin-left: 128px;
+    border: none;
+    background-color: #fff;
+    background-image: url('../imgs/ar-right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    list-style: none;
+
+    li.slick-active {
+      button {
+        background-color: $color-dark;
+      }
+    }
+
+    button {
+      width: 60px;
+      height: 60px;
+      font-size: 0;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+}

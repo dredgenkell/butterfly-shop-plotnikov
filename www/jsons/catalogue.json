@@ -1,0 +1,52 @@
+{
+  "catalogue": [
+    {
+      "number": "5",
+      "text": "Бабочка такая",
+      "imgUrl": "imgs/works-pic5.png",
+      "imgAlt": "Бабочка"
+    },
+    {
+      "number": "6",
+      "text": "Бабочка такая",
+      "imgUrl": "imgs/works-pic6.png",
+      "imgAlt": "Бабочка"
+    },
+    {
+      "number": "7",
+      "text": "Бабочка такая",
+      "imgUrl": "imgs/works-pic7.png",
+      "imgAlt": "Бабочка"
+    },
+    {
+      "number": "8",
+      "text": "Бабочка такая",
+      "imgUrl": "imgs/works-pic8.png",
+      "imgAlt": "Бабочка"
+    },
+    {
+      "number": "9",
+      "text": "Бабочка такая",
+      "imgUrl": "imgs/works-pic9.png",
+      "imgAlt": "Бабочка"
+    },
+    {
+      "number": "10",
+      "text": "Бабочка такая",
+      "imgUrl": "imgs/works-pic10.png",
+      "imgAlt": "Бабочка"
+    },
+    {
+      "number": "11",
+      "text": "Бабочка такая",
+      "imgUrl": "imgs/works-pic11.png",
+      "imgAlt": "Бабочка"
+    },
+    {
+      "number": "12",
+      "text": "Бабочка такая",
+      "imgUrl": "imgs/works-pic12.png",
+      "imgAlt": "Бабочка"
+    }
+  ]
+}

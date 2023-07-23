@@ -24,7 +24,7 @@ $(document).ready(function () {
       data: {
         quantity: 1
       },
-      success: function(res) {
+      success: function (res) {
         let catalogueHtml = createCatalogueHtml(res.catalogue);
 
         $('.js-catalogue-wrap').append(catalogueHtml);
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     dataArray.forEach(function (item) {
       htmlString = htmlString +
-      `<div class="catalogue-wrap"><img src="${item.imgUrl}" alt="${item.imgAlt}" class="catalogue-img"></img><figcaption class="catalogue-caption">${item.text}</figcaption></div >`;
+        `<div class="catalogue-wrap"><img src="${item.imgUrl}" alt="${item.imgAlt}" class="catalogue-img"></img><figcaption class="catalogue-caption">${item.text}</figcaption></div >`;
     });
 
 
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
   // Catalogue tabs filtration
 
-  $('.js-filter-link').on('click', function(event) {
+  $('.js-filter-link').on('click', function (event) {
     event.preventDefault();
 
     $('.js-filter-link').removeClass('active');
@@ -77,17 +77,17 @@ $(document).ready(function () {
   // Accordion FAQ
 
   let prevBtn;
-  $('.js-accordion-btn').on('click',function(){
-if (prevBtn === this) {
-  $(this).toggleClass('open');
-  $(this).next().slideToggle();
-} else {
-  $(prevBtn).next().slideUp();
-  $(prevBtn).removeClass('open');
-  $(this).next().slideDown();
-  $(this).addClass('open');
-  prevBtn = this;
-}
+  $('.js-accordion-btn').on('click', function () {
+    if (prevBtn === this) {
+      $(this).toggleClass('open');
+      $(this).next().slideToggle();
+    } else {
+      $(prevBtn).next().slideUp();
+      $(prevBtn).removeClass('open');
+      $(this).next().slideDown();
+      $(this).addClass('open');
+      prevBtn = this;
+    }
   });
 
 
@@ -96,4 +96,18 @@ if (prevBtn === this) {
     autoplay: true
   });
 
+});
+
+
+// Contacts tabs
+
+$('.js-tab-link').on('click', function(event) {
+  event.preventDefault();
+  $('.js-tab-link').removeClass('active');
+  $(this).addClass('active');
+
+  let index = $(this).index('.js-tab-link');
+
+  $('.js-contacts-item').removeClass('active');
+  $('.js-contacts-item').eq(index).addClass('active');
 });
